@@ -77,6 +77,9 @@ def callback():
     master.clipboard_append(word)
     messagebox.showinfo("Conversion Complete", "Copied to clipboard")
 
+l = Label(master, text="Enter text, hit convert, and enjoy your meme")
+l.pack()
+
 #Convert to Regional Indicators button
 b = Button(master, text="Convert to Regional Indicators", width=30, command=callback)
 b.pack()
