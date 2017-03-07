@@ -1,6 +1,3 @@
-#Tkinter GUI coming to theatres near you
-#Just don't use numbers fam
-
 from tkinter import *
 master = Tk()
 
