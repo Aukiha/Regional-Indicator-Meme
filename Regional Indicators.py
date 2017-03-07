@@ -73,6 +73,7 @@ def callback():
 
 #Joins together the converted words
     word = "".join(word)
+    master.clipboard_clear()
     master.clipboard_append(word)
     messagebox.showinfo("Conversion Complete", "Copied to clipboard")
 
