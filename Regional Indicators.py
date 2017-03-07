@@ -80,6 +80,9 @@ def callback():
 l = Label(master, text="Enter text, hit convert, and enjoy your meme")
 l.pack()
 
+d = Label(master, text="Letters and numbers only.")
+d.pack()
+
 #Convert to Regional Indicators button
 b = Button(master, text="Convert to Regional Indicators", width=30, command=callback)
 b.pack()
