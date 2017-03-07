@@ -30,6 +30,7 @@ def callback():
     counter =- 1
 
     word = "".join(word)
+    master.clipboard_clear()
     master.clipboard_append(word)
     messagebox.showinfo("Conversion Complete", "Copied to clipboard")
 
@@ -37,4 +38,3 @@ b = Button(master, text="Convert to Regional Indicators", width=30, command=call
 b.pack()
 
 mainloop()
-
