@@ -1,11 +1,15 @@
 from tkinter import *
+
+#Initilizes Tkinter window
 master = Tk()
 
+#Entry box
 text = Entry(master, width=50)
 text.pack()
 
 text.focus_set()
 
+#Main word conversion function
 def callback():
     word = text.get()
     word = word.lower()
@@ -13,7 +17,7 @@ def callback():
     counter = len(word)
     position = 0
 
-
+#Checks what each value in the entry is, then converts accordingly
     while counter > 0:
         if word[position] == " ":
             counter = counter - 1
@@ -67,10 +71,12 @@ def callback():
             position = position + 1
     counter =- 1
 
+#Joins together the converted words
     word = "".join(word)
     master.clipboard_append(word)
     messagebox.showinfo("Conversion Complete", "Copied to clipboard")
 
+#Convert to Regional Indicators button
 b = Button(master, text="Convert to Regional Indicators", width=30, command=callback)
 b.pack()
 
